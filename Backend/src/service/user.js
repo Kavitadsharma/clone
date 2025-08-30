@@ -11,10 +11,7 @@ class UserService {
   
 
   }
-
-
-
- 
+  
   async register(payload) {
     const { email, name, phone, password } = payload;
     let usercheck = await this.model.findOne({ email })
